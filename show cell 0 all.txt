@@ -1,0 +1,160 @@
+C819-4G#sh cell 0 all      
+Hardware Information
+====================
+Modem Firmware Version = SWI9200X_03.05.10.02
+Modem Firmware built = 2012/02/25 11:58:38
+Hardware Version = 10
+International Mobile Subscriber Identity (IMSI) = 310260154336245
+International Mobile Equipment Identity (IMEI) = 359469040023297
+Integrated Circuit Card ID (ICCID) = 8901260153743362454
+Mobile Subscriber International Subscriber
+IDentity Number (MSISDN) = 
+Current Modem Temperature = 0 deg C
+
+Profile Information
+====================
+
+Profile 1 = INACTIVE* **
+--------
+PDP Type = IPv4v6
+Access Point Name (APN) = fast.t-mobile.com
+Authentication = None
+Username: 
+Password: 
+
+  * - Default profile 
+ ** - LTE attach profile
+
+
+Data Connection Information
+===========================
+Data Transmitted = 0 bytes, Received = 0 bytes
+Profile 1, Packet Session Status = INACTIVE
+        Inactivity Reason = Unknown
+Profile 2, Packet Session Status = INACTIVE
+        Inactivity Reason = Unknown
+Profile 3, Packet Session Status = INACTIVE
+        Inactivity Reason = Unknown
+Profile 4, Packet Session Status = INACTIVE
+        Inactivity Reason = Unknown
+Profile 5, Packet Session Status = INACTIVE
+        Inactivity Reason = Unknown
+Profile 6, Packet Session Status = INACTIVE
+        Inactivity Reason = Unknown
+Profile 7, Packet Session Status = INACTIVE
+        Inactivity Reason = Unknown
+Profile 8, Packet Session Status = INACTIVE
+        Inactivity Reason = Unknown
+Profile 9, Packet Session Status = INACTIVE
+        Inactivity Reason = Unknown
+Profile 10, Packet Session Status = INACTIVE
+        Inactivity Reason = Unknown
+Profile 11, Packet Session Status = INACTIVE
+        Inactivity Reason = Unknown
+Profile 12, Packet Session Status = INACTIVE
+        Inactivity Reason = Unknown
+Profile 13, Packet Session Status = INACTIVE
+        Inactivity Reason = Unknown
+Profile 14, Packet Session Status = INACTIVE
+        Inactivity Reason = Unknown
+Profile 15, Packet Session Status = INACTIVE
+        Inactivity Reason = Unknown
+Profile 16, Packet Session Status = INACTIVE
+        Inactivity Reason = Unknown
+
+Network Information
+===================
+Current System Time = Sun Dec 2 6:42:6 2018
+Current Service Status = Normal
+Current Service = Packet switched
+Current Roaming Status = Home
+Network Selection Mode = Automatic
+Network = T-Mobil
+Mobile Country Code (MCC) = 310
+Mobile Network Code (MNC) = 260
+Packet switch domain(PS) state = Attached
+Registration state(EMM) = Registered
+Location Area Code (LAC) = 65534
+Cell ID = 15522561
+Primary Scrambling Code = 65535
+          
+Radio Information
+=================
+Radio power mode = ON
+Channel Number = 605
+Current Band = GSM 1900
+Current RSSI = -62 dBm
+Current RSRP = -81  dBm
+Current RSRQ = -15  dB
+Current SNR = 5.2  dB
+LTE Technology Preference = AUTO
+LTE Technology Selected = EDGE
+
+Modem Security Information
+==========================
+Card Holder Verification (CHV1) = Disabled
+SIM Status = OK
+SIM User Operation Required = None
+Number of CHV1 Retries remaining = 3
+
+GPS Information
+==========================
+
+GPS Info
+-------------
+GPS Feature: enabled
+GPS Port Selected: none
+GPS State: GPS acquiring
+GPS Mode Configured: standalone
+Last Location Fix Error: Offline [0x0]
+GPS Error Count: 37
+Latitude: 0 Deg 0 Min 0 Sec North
+Longitude: 0 Deg 0 Min 0 Sec East
+Timestamp (GMT): Tue Feb  5 06:28:16 2036
+
+Fix type index: 0, Height: -500 m
+HDOP: , GPS Mode Used: unknown
+
+Satellite Info
+----------------
+
+SMS Information
+===============
+Incoming Message Information
+----------------------------
+SMS stored in modem = 0
+SMS archived since booting up = 0
+Total SMS deleted since booting up = 0
+Storage records allocated = 25
+Storage records used = 0
+Number of callbacks triggered by SMS = 0
+Number of successful archive since booting up = 0
+Number of failed archive since booting up = 0
+
+Outgoing Message Information
+----------------------------
+Total SMS sent successfully = 0
+Total SMS send failure = 0
+Number of outgoing SMS pending = 0
+Number of successful archive since booting up = 0
+Number of failed archive since booting up = 0
+Last Outgoing SMS Status = SUCCESS
+Copy-to-SIM Status =     0x0
+Send-to-Network Status = 0x0
+Report-Outgoing-Message-Number:
+  Reference Number =     0
+  Result Code =          0x0
+  Diag Code =            0x0 0x0 0x0 0x0 0x0
+
+SMS Archive URL = 
+
+Error Information
+=================
+
+This command is not supported on 4G modems.
+
+
+Modem Crashdump Information
+===========================
+Modem crashdump logging: off
+C819-4G#

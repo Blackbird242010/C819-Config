@@ -1,0 +1,26 @@
+C819-4G#sh int desc
+Interface                      Status         Protocol Description
+Ce0                            up             up       
+NM0/0/5                        down           down     
+Di1                            up             up       
+Fa0                            up             down     
+Fa1                            up             down     
+Fa2                            up             down     
+Fa3                            up             down     
+Gi0                            down           down     
+NV0                            admin down     down     
+Se0                            admin down     down     
+Vl1                            down           down     
+C819-4G#sh ip int br
+Interface                  IP-Address      OK? Method Status                Protocol
+Cellular0                  unassigned      YES manual up                    up      
+CellNM0/0/5                unassigned      YES unset  down                  down    
+Dialer1                    unassigned      YES manual up                    up      
+FastEthernet0              unassigned      YES unset  up                    down    
+FastEthernet1              unassigned      YES unset  up                    down    
+FastEthernet2              unassigned      YES unset  up                    down    
+FastEthernet3              unassigned      YES unset  up                    down    
+GigabitEthernet0           unassigned      YES NVRAM  down                  down    
+NVI0                       unassigned      YES unset  administratively down down    
+Serial0                    unassigned      YES NVRAM  administratively down down    
+Vlan1                      unassigned      YES unset  down                  down  
