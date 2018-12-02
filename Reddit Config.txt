@@ -1,0 +1,167 @@
+C819-4G#sh run
+Building configuration...
+WLAN_AP_SM: Config command is not supported
+
+Current configuration : 1974 bytes
+!
+! Last configuration change at 06:08:06 UTC Sun Dec 2 2018
+version 15.3
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname C819-4G
+!
+boot-start-marker
+boot-end-marker
+!
+aqm-register-fnf
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!
+!
+
+
+!
+!
+!
+!
+ip cef
+ipv6 unicast-routing
+ipv6 cef
+!
+!
+!
+!
+!
+multilink bundle-name authenticated
+!
+chat-script lte "" "AT!CALL" TIMEOUT 20 "OK"
+!
+!
+!
+!
+!
+!
+license udi pid C819G-4G-A-K9 sn FTX182081AZ
+!
+!
+!
+!
+!
+!
+!
+controller Cellular 0
+ lte sim profile 1
+ lte gps mode standalone
+ lte gps nmea ip
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Cellular0
+ ip address negotiated
+ ip nat outside
+ ip virtual-reassembly in
+ encapsulation slip
+ dialer in-band
+ dialer string lte
+ dialer-group 1
+!
+interface FastEthernet0
+ no ip address
+!
+interface FastEthernet1
+ no ip address
+!
+interface FastEthernet2
+ no ip address
+!
+interface FastEthernet3
+ no ip address
+!
+interface GigabitEthernet0
+ ip address dhcp
+ duplex auto
+ speed auto
+!
+interface Serial0
+ no ip address
+ shutdown
+ clock rate 2000000
+!
+interface Vlan1
+ no ip address
+!
+interface Dialer1
+ ip address negotiated
+ encapsulation slip
+ dialer pool 1
+ dialer idle-timeout 30
+ dialer string lte
+ dialer-group 1
+!
+ip forward-protocol nd
+no ip http server
+no ip http secure-server
+!
+!
+ip route 0.0.0.0 0.0.0.0 Cellular0
+!
+dialer-list 1 protocol ip list 1
+!
+access-list 1 permit any
+!
+control-plane
+!
+!
+!
+mgcp behavior rsip-range tgcp-only
+mgcp behavior comedia-role none
+mgcp behavior comedia-check-media-src disable
+mgcp behavior comedia-sdp-force disable
+!
+mgcp profile default
+!
+!
+!
+!
+!
+line con 0
+ script dialer lte
+ logging synchronous
+ no modem enable
+line aux 0
+line 2
+ no activation-character
+ no exec
+ transport preferred none
+ transport input all
+ stopbits 1
+line 3
+ script dialer lte
+ no exec
+line 6
+ modem InOut
+ no exec
+ transport input all
+ transport output all
+line vty 0 4
+ login
+ transport input all
+!
+scheduler allocate 20000 1000
+!
+end
